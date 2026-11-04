@@ -147,4 +147,4 @@ const K2='li-streak-v1',sk=JSON.parse(localStorage.getItem(K2)||'{}');
 $('streak').innerHTML=['L','M','X','J','V','S','D'].map((d,i)=>`<button data-i="${i}" class="${sk[i]?'on':''}">${d}</button>`).join('');
 $('streak').onclick=e=>{const b=e.target.closest('button');if(!b)return;const i=b.dataset.i;sk[i]=!sk[i];b.classList.toggle('on',sk[i]);localStorage.setItem(K2,JSON.stringify(sk))};
 </script>
-</body></html>.
+</body></html>
